@@ -130,7 +130,7 @@ span a:hover {
 
 p {
     font-weight: 200;
-    width: 470px;
+    max-width: 470px;
     text-align: center;
     opacity: 0.5;
 }
