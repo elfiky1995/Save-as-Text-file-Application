@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save as Text file - Application</title>
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Signature-->
+    <span>Created by <a href="https://github.com/elfiky1995" target="_blank">Mahmoud El-Fiky</a></span>
+    <!--Signature-->
+    <div class="container">
+        <textarea placeholder="Enter something to save as file..." required></textarea>
+        <div class="file-options">
+            <div class="option file-name">
+                <label>File Name</label>
+                <input type="text" placeholder="Enter file name">
+            </div>
+            <div class="option save-as">
+                <label>Save As</label>
+                <div class="select-menu">
+                    <select>
+                        <option value="text/plain">Text File (.txt)</option>
+                        <option value="text/javascript">JS File (.js)</option>
+                        <option value="text/html">HTML File (.html)</option>
+                        <option value="image/svg+xml">SVG File (.svg)</option>
+                        <option value="application/msword">Doc File (.doc)</option>
+                        <option value="application/vnd.ms-powerpoint">PPT File (.ppt)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button class="save-btn">Save As Text File</button>
+    </div>
+    <!--Script Sheet-->
+    <script src="main.js"></script>
+</body>
+
+</html>

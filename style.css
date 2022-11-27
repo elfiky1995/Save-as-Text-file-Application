@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --background-color: #EFF5F5;
+    --font-color: #497174;
+    --button-color: #EB6440;
+    --border-color: #CCC;
+    --main-transition: 0.3s;
+    --main-height: 50px;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+/*Signature*/
+span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--font-color);
+    font-weight: 200;
+}
+
+span a {
+    font-weight: 400;
+    color: var(--font-color);
+    transition: var(--main-transition);
+    text-decoration: none;
+}
+
+span a:hover {
+    color: #234648;
+}
+
+/*Signature*/
+
+.container {
+    width: 450px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 30px 25px 40px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(214, 228, 229, 0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(214, 228, 229, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(214, 228, 229, 0.5);
+}
+
+.container :where(textarea, input, select, button) {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.container textarea {
+    height: 270px;
+    resize: none;
+    border: 1px solid var(--border-color);
+    padding: 8px 13px;
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.container textarea::placeholder,
+.container input::placeholder,
+.container select {
+    color: var(--font-color);
+}
+
+.container .file-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container .file-options .option {
+    width: calc(100% / 2 - 8px);
+}
+
+.option :where(input, .select-menu) {
+    border: 1px solid var(--border-color);
+    height: var(--main-height);
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.option .select-menu select {
+    height: var(--main-height);
+    background: none;
+}
+
+.container .save-btn {
+    padding: 16px 0;
+    margin-top: 20px;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: var(--main-transition);
+}
+
+.container .save-btn:hover {
+    background-color: #a1472f;
+}
+
+.container textarea:valid~.save-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
