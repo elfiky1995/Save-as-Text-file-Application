@@ -19,8 +19,10 @@
 body {
     font-family: var(--font-family);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     min-height: 100vh;
     background-color: var(--background-color);
     color: var(--font-color);
@@ -33,6 +35,7 @@ span {
     left: 10px;
     color: var(--font-color);
     font-weight: 200;
+    opacity: 0.5;
 }
 
 span a {
@@ -123,4 +126,11 @@ span a:hover {
 .container textarea:valid~.save-btn {
     opacity: 1;
     pointer-events: auto;
+}
+
+p {
+    font-weight: 200;
+    width: 470px;
+    text-align: center;
+    opacity: 0.5;
 }

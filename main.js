@@ -16,5 +16,6 @@ saveBtn.addEventListener("click", () => {
     link.download = filenameInput.value; // passing filename as download value of link
     link.href = fileUrl; // passing fileUrl as href value of link
     link.click(); // clicking link so the file download
+
     //<a download="filenameInput.value" href="blob:http://127.0.0.1:5500/5fcffe49-75cd-4f25-a71a-78fafa0bf092"></a>
 })
