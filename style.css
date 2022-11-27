@@ -26,6 +26,7 @@ body {
     min-height: 100vh;
     background-color: var(--background-color);
     color: var(--font-color);
+    position: relative;
 }
 
 /*Signature*/
@@ -130,7 +131,7 @@ span a:hover {
 
 p {
     font-weight: 200;
-    max-width: 470px;
+    max-width: 350px;
     text-align: center;
     opacity: 0.5;
 }
@@ -139,25 +140,38 @@ p {
     body {
         gap: 15px;
         min-height: 80vh;
+        font-size: 14px;
     }
 
     .container {
-        margin-top: 20px;
         width: 100%;
         border-radius: 0px;
         padding: 20px 15px;
+        text-align: center;
     }
 
     .container :where(textarea, input, select, button) {
-        width: 90%;
+        width: 100%;
+        font-size: 12px;
     }
 
     .container textarea {
         height: 200px;
+        width: 100%;
+    }
+
+    .container .file-options {
+        width: 100%;
+        flex-direction: column;
     }
 
     .container .file-options .option {
-        width: calc(90% / 2 - 8px);
+        width: 100%;
+    }
+
+    .container .file-options .option .select-menu {
+        width: 100%;
+        text-align: center;
     }
 
     p {
