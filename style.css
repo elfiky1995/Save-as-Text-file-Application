@@ -144,6 +144,7 @@ p {
     }
 
     .container {
+        margin-top: 20px;
         border-radius: 0px;
         padding: 20px 15px;
         text-align: center;
