@@ -144,33 +144,33 @@ p {
     }
 
     .container {
-        width: 100%;
         border-radius: 0px;
         padding: 20px 15px;
         text-align: center;
     }
 
     .container :where(textarea, input, select, button) {
-        width: 100%;
         font-size: 12px;
     }
 
     .container textarea {
         height: 200px;
+    }
+
+    .container .file-options,
+    .container .file-options .option,
+    .container .file-options .option .select-menu,
+    .container textarea,
+    .container :where(textarea, input, select, button),
+    .container {
         width: 100%;
     }
 
     .container .file-options {
-        width: 100%;
         flex-direction: column;
     }
 
-    .container .file-options .option {
-        width: 100%;
-    }
-
     .container .file-options .option .select-menu {
-        width: 100%;
         text-align: center;
     }
 
